@@ -20,7 +20,7 @@ public class BaseballThings {
 
 			batterStats[i] = new int[numAtBats]; // initialize array for this batter within main array
 
-			for (int j = 0; j < numAtBats; ++j) { // iterate through at-bats for this batter
+			for (int j = 0; j < batterStats[i].length; ++j) { // iterate through at-bats for this batter
 				System.out.printf("For bat %d (of batter %d),", j + 1, i + 1);
 				batterStats[i][j] = Validator.getInt(input, " enter the number of bases earned: ", 0, 4); // get number of bases for this at-bat																										
 			}
